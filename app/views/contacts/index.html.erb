@@ -1,0 +1,50 @@
+
+<h1>this is show contact us page</h1>
+
+<table>
+  <tr>
+	    <th>name</th>
+	    <th>email</th>
+	    <th>mobile no</th>
+	    <th>heading</th>
+	    <th>contents</th>
+  </tr>
+
+
+
+<% @contacts.each do |contact| %>
+    <tr>
+	  	<td>
+			<p>
+			  <strong>Name:</strong>
+			  <%= contact.name %>
+			</p>
+		</td>
+		<td>
+			<p>
+			  <strong>Email:</strong>
+			  <%= contact.email %>
+			</p>
+	    </td> 
+	    <td>
+			<p>
+			  <strong>mobile No:</strong>
+			  <%= contact.mob %>
+			</p>
+		 </td>
+		 <td>
+			<p>
+			  <strong>head:</strong>
+			  <%= contact.head %>
+			</p>
+	    </td>
+	    <td>
+			<p>
+			  <strong>contents:</strong>
+			  <%= contact.content %>
+			</p>
+	    </td>
+    </tr>
+
+ <% end %>
+</table>

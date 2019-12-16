@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Hello, world!</title>
+  </head>
+    <style>
+          body 
+          {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue; 
+          }
+           
+          .login_form
+          {
+              width: auto;
+              height: auto;
+              margin: auto;
+              border-color: red;
+          }   
+       
+        * {
+            box-sizing: border-box;
+          }
+
+          /* Add padding to containers */
+          .container {
+            padding: 16px;
+            background-color: lightblue;	 
+          }
+
+          /* Full-width input fields */
+          input[type=text],input[type=email], input[type=tel]:focus {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+
+          input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+
+          /* Overwrite default styles of hr */
+          hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+          }
+
+          /* Set a style for the submit button */
+          .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.75;
+          }
+
+          .registerbtn:hover {
+            opacity: 1;
+          }
+
+          /* Add a blue text color to links */
+       a {
+            color: dodgerblue;
+          }
+
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="homepage">Farmers</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="homepage">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="aboutUs">About-Us <span class="sr-only">(current)</span></a>
+              </li>
+               <li class="nav-item active">
+                <a class="nav-link" href="/contacts/new">Contact-Us <span class="sr-only">(current)</span></a>
+              </li>
+            
+          </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </div>
+      </nav>
+<!-- 
+      ========================================================================================== -->
+    <div class="SignupPage">      
+      <form action="#">
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill this form for registeration</p>
+          <hr>
+          <label for="Address"><b><marquee width="100%"direction="left" height="30%">Enter proper address and othe details </marquee></b></label><br>
+
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter name" name="Name" required>
+
+          <label for="Address"><b>Village/Town</b></label>
+          <input type="text" placeholder="Enter vilaage name" name="Address" required>
+
+
+          <label for="Address"><b>Tehsil</b></label>
+          <input type="text" placeholder="Enter Tehsil name" name="Address" required>
+
+
+          <label for="Address"><b>District</b></label>
+          <input type="text" placeholder="Enter District name" name="Address" required>
+
+          <label for="Address"><b>State</b></label>
+          <input type="text" placeholder="Enter State name" name="Address" required>
+
+         <label for="phone1"><b>Telephone1</b></label>
+          <input type="text" placeholder="1234567890" name="phone1" pattern="[0-9]{10}" required>
+          
+      	<label for="phone2"><b>Telephone2</b></label>
+          <input type="text" placeholder="1234567890" name="phone2" pattern="[0-9]{10}" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+
+          <hr>
+          <button type="submit" class="registerbtn">register</button>
+        </div>
+      </form>
+    </div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
